@@ -1,17 +1,19 @@
 'use client'
 export async function fetchChatResponse(prompt: String, model: String) {
     const apiUrl =
-      "https://digismiths-api-60026948054.development.catalystserverless.in/server/digismiths_api_function/";
+      "https://openai-endpoints-60026948054.development.catalystserverless.in/server/openai_endpoints_function/chat";
     // const apiUrl = "https://api.restful-api.dev/objects";
   
     try {
       const response = await fetch(apiUrl, {
-        method: "GET",
-        // headers: {
-        //   "Content-Type": "application/json",
-        //   "Accept":"*/*",
-        // },
-        // body: JSON.stringify({ prompt, model }),
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Credentials": "true",
+
+        },
+        body: JSON.stringify({ prompt, model }),
       });
   
       // if (!response.ok) {

@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import { fetchChatResponse } from '@/utils/api';
+import { fetchChatResponse } from '@/utils/fetchresponse';
 
 export default function Home() {
   const [prompt, setPrompt] = useState('');
