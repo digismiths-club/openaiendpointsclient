@@ -1,6 +1,7 @@
 'use client';
 
-import Login from "./components/LoginWrapper";
+import Login from "../components/LoginWrapper";
+// import Login from "@/components/LoginWrapper";
 
 
 function page() {
