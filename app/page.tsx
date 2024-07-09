@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <>
-      <span
+      {/* <span
         className="toggleButton absolute left-1 top-1 cursor-pointer "
         onClick={toggleSidebar}
       >
@@ -75,6 +75,13 @@ export default function Home() {
             </svg>
           </span>
         </div>
+        <div className="searchbox w-full h-2">
+        <input
+          type="text"
+          placeholder="Search"
+          className="text-[15px] ml-4 w-full bg-transparent focus:outline-none"
+        />
+        </div>
         <hr />
         <div className="historyList w-full mt-4">
           <div className=" text-center cursor-pointer text-white h-10 p-2 mx-2 rounded-xl hover:bg-neutral-400">
@@ -93,7 +100,7 @@ export default function Home() {
             <p className="text-xl">#1 component</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
     // <div className="home">
     //   <form onSubmit={handleSubmit}>
