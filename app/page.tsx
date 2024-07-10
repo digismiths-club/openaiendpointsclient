@@ -1,13 +1,12 @@
 'use client';
 
-import Login from "../components/LoginWrapper";
-// import Login from "@/components/LoginWrapper";
-
+import LoginWrapper from "../components/LoginWrapper";
+import './globals.css';
 
 function page() {
   return (
     <>
-      <Login/>
+      <LoginWrapper/>
     </>
   )
 }
