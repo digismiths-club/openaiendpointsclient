@@ -12,3 +12,7 @@ html, body { height: 100% }
 .left-little {
     left: calc(18%); /* Adjust as needed */
   }
+
+.item-hover:hover{
+  background: rgba(244, 243, 250, 0.603);
+}

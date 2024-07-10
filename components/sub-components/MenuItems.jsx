@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const MenuItems = ({ links, currentPage, toggle }) => {
+const MenuItems = ({ links, currentPage, toggle, screen }) => {
   const { to, Icon, name } = links;
 
   return (
-    <div className="relative ">
+    <div className="relative item-hover py-1">
       <Link href={to}>
         <div
           className={`absolute h-full w-1 rounded-l-xl z-20 bg-white right-0  ${
@@ -13,16 +13,27 @@ const MenuItems = ({ links, currentPage, toggle }) => {
           }`}
         ></div>
         <div
-          className={`flex gap-5 h-10 px-4 mx-1 rounded-lg font-light items-center item-hover `}
+          className={`flex gap-5 h-10 px-4 mx-1 rounded-lg font-light items-center  `}
         >
           <h2 className="icons bg-white rounded-full border shadow-lg p-1">
             <Icon className="w-8 h-8" />
           </h2>
-
-          {!toggle ? (
-            <span className="text-white text-xl">{name}</span>
+          {screen == "mobile" ? (
+            <>
+              {toggle ? (
+                <span className="text-white text-xl">{name}</span>
+              ) : (
+                <></> // or null, to render nothing
+              )}
+            </>
           ) : (
-            <span></span>
+            <>
+              {!toggle ? (
+                <span className="text-white text-xl">{name}</span>
+              ) : (
+                <span></span> // or null, to render nothing
+              )}
+            </>
           )}
         </div>
       </Link>
