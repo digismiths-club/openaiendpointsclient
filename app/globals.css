@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .hero{
-    background-image: url('/hero.jpg');
-    background-size: cover;
+  background-image: url('/hero.jpg');
+  background-size: cover;
 }
+
+html, body { height: 100% }
+
+.left-little {
+    left: calc(18%); /* Adjust as needed */
+  }
