@@ -1,7 +1,5 @@
-import React from 'react'
-import { FaFacebook, FaGoogle } from 'react-icons/fa'
-import Login from './Login'
 import Image from 'next/image'
+import Login from './Login'
 
 function LoginWrapper() {
   return (

@@ -19,9 +19,11 @@ const MenuItems = ({ links, currentPage, toggle }) => {
             <Icon className="w-8 h-8" />
           </h2>
 
-          <span className={`text-white text-xl ${toggle ? "none" : ""}`}>
-            {name}
-          </span>
+          {!toggle ? (
+            <span className="text-white text-xl">{name}</span>
+          ) : (
+            <span></span>
+          )}
         </div>
       </Link>
     </div>
