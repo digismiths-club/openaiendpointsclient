@@ -1,7 +1,7 @@
 import React from "react";
 import { HiSearch } from "react-icons/hi";
 import { menuOptions, menuOptionsTwo } from "@/data/menu";
-import MenuItems from "./sub-components/MenuItems";
+import MenuItems from "./MenuItems";
 import { usePathname } from "next/navigation";
 
 const Navbar = ({ toggle, screen }) => {
@@ -44,7 +44,7 @@ const Navbar = ({ toggle, screen }) => {
             )}
       </div>
       {/* Home div */}
-      <div className="homeicon bg-neutral-700 py-5 flex flex-col gap-9">
+      <div className="homeicon bg-neutral-700 py-5 flex flex-col gap-7">
         <MenuItems
           links={menuOptions[0]}
           currentPage={currentPage}

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 // import logo from "/digismiths-logo-black-theme.svg";
 
-import Navbar from "./Navbar";
+import Navbar from "./sub-components/Navbar";
 
 const Sidebar = () => {
   const [toggle, setToggle] = useState(false);

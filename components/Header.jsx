@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
-import Navbar from "./Navbar";
+import Navbar from "./sub-components/Navbar";
 // import NavBar from "../navbar/NavBar";
 
 const Header = () => {
