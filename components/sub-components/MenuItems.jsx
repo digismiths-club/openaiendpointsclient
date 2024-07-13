@@ -16,7 +16,7 @@ const MenuItems = ({ links, currentPage, toggle, screen }) => {
           className={`flex gap-5 h-10 px-4 mx-1 rounded-lg font-light items-center  `}
         >
           <h2 className="icons bg-white rounded-full border shadow-lg p-1">
-            <Icon className="w-8 h-8" />
+            <Icon className="w-6 h-6" />
           </h2>
           {screen == "mobile" ? (
             <>

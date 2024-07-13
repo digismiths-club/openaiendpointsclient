@@ -13,8 +13,8 @@ const Sidebar = () => {
       {/* Sidebar div */}
       <div
         className={` ${
-          toggle ? "w-20" : "w-1/5"
-        } bg-neutral-700 transition-width duration-500 linear`}
+          toggle ? "w-20" : "w-1/4"
+        } bg-neutral-700 transition-width duration-500 linear `}
       >
         {/* Arrow buttons */}
         <div

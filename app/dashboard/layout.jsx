@@ -19,9 +19,9 @@ const DashboardLayout = ({ children }) => {
   }, []);
 
   return (
-    <section className={`w-full h-full ${isMobile ? "" : "flex"}`}>
+    <section className={`w-full h-full ${isMobile ? "" : "flex"} `}>
       {isMobile ? <Header /> : <Sidebar />}
-      <main>{children}</main>
+      <main className="w-full overflow-y-auto">{children}</main>
     </section>
   );
 };
