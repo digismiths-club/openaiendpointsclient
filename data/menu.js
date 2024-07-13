@@ -1,6 +1,8 @@
 import { HiOutlineHome, HiOutlineCog, HiSearch } from "react-icons/hi";
 import { AiOutlineTeam } from "react-icons/ai";
 import { TbReportAnalytics } from "react-icons/tb";
+import { TbMessageChatbot } from "react-icons/tb";
+import { FaGlobe } from "react-icons/fa";
 import {
     MdOutlineAccountCircle,
     MdHelpOutline,
@@ -11,8 +13,8 @@ import { RiWindyFill } from "react-icons/ri";
 
 export const menuOptions = [
     { name: "Home", to: "/dashboard/account-summary", Icon: HiOutlineHome },
-    { name: "Teams", to: "/dashboard/teams", Icon: AiOutlineTeam },
-    { name: "Accounts", to: "/dashboard/accounts", Icon: MdOutlineAccountCircle },
+    { name: "ChatBot", to: "/dashboard/chatbot", Icon: TbMessageChatbot },
+    { name: "DNS", to: "/dashboard/dns", Icon: FaGlobe },
     { name: "Reports", to: "/dashboard/reports", Icon: TbReportAnalytics },
     { name: "Flows", to: "/dashboard/flows", Icon: RiWindyFill },
 ];
